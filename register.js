@@ -13,7 +13,7 @@ function enviar() {
         alert("Por favor completá todos los campos.");
         return;
     }
-    if (contraseña.length < 8 || contraseña.length > 20){
+    if (contraseña.length < 8 || contraseña.length > 20) {
         alert("La contraseña debe tener entre 8 y 20 caracteres.");
         contraseña = elemento("contraseña").style = "border-color: red"
         return;
@@ -44,7 +44,7 @@ function enviar() {
     // "apellido":"Schmidt",
     // "correo":"faras.a.schmidt@gmail.com"
     // ,"contraseña":"123"}]
-    // Crear y guardar nuevo usuario
+    // crear y guardar nuevo usuario
     const nuevoUsuario = { nombre, apellido, correo, contraseña };
     usuarios.push(nuevoUsuario);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));

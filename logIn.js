@@ -9,8 +9,8 @@ function enviar() {
     //console.log(correoIngresadoElemento)
     // Obtener los datos guardados en localStorage
     const usuariosGuardados = JSON.parse(localStorage.getItem("usuarios"));
-    const usuarioLogueado = usuariosGuardados?.find(usuario=>correoIngresado === usuario.correo && contraseñaIngresada === usuario.contraseña)
-    
+    const usuarioLogueado = usuariosGuardados?.find(usuario => correoIngresado === usuario.correo && contraseñaIngresada === usuario.contraseña)
+
     // Validar credenciales
     if (usuarioLogueado) {
         localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioLogueado))

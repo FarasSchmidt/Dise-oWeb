@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -66,7 +65,7 @@ a:hover {
     text-decoration: underline;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
